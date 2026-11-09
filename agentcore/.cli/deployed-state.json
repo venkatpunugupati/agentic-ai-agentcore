@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "default": {
+      "stackArn": "arn:aws:cloudformation:us-east-2:126450248607:stack/AgentCore-venkatagent-default/043fb820-da11-11f1-bacf-06bdc4505c47",
+      "resources": {
+        "credentials": {}
+      }
+    }
+  }
+}
