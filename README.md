@@ -35,7 +35,7 @@ This loads `.env.local` and runs the runtime on your machine. Requires Node 20.1
 
 ```bash
 agentcore build
-agentcore deploy -y --target default
+agentcore deploy --target default
 ```
 
 Region is `us-east-2`. The deploy creates the `AgentCore-venkatagent-default` stack. Dependencies are `bedrock-agentcore`, `aws-opentelemetry-distro`, and `openai`.
