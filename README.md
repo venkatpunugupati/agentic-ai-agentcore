@@ -43,7 +43,7 @@ Region is `us-east-2`. The deploy creates the `AgentCore-venkatagent-default` st
 ## Invoke
 
 ```bash
-agentcore invoke --payload '{"question": "Count the words in '\''the quick brown fox jumps over the lazy dog'\'', then multiply by 3"}'
+agentcore invoke --runtime venkatagent --payload '{"prompt": "Count the words in the quick brown fox jumps over the lazy dog, then multiply by 3"}'
 ```
 
 The runtime returns `{"message": "27"}` for that question. An empty question returns `{"message": "Invalid input: Question cannot be empty."}`. You can also call `InvokeAgentRuntime` directly with boto3; in production, put API Gateway in front of the runtime.
